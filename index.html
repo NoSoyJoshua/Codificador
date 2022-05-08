@@ -4,11 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/f036dde0fe.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet"> 
     <title>Codificador</title>
 </head>
 <body>
+    <nav>
+        <img src="./assets/images/menu.png" alt="logo" class="logo">
+        <p class="navbar-name">Joshua Quesada</p>
+
+        <label for="checkbox" class="toggler">
+            <input type="checkbox" id="checkbox">
+            <span class="ball"></span>
+            <i class="fa-regular fa-sun sun"></i>
+            <i class="fa-regular fa-moon moon"></i>
+        </label>
+    </nav>
+
+    <main>
+        <img src="./assets/images/menu.png" alt="Navegación" class="navbar-mobile-button">
+        <div class="text-container main-container">
+            <textarea type="text" class="text-area" placeholder="¡Escribe los que deseas des/encriptar aquí!" value=""></textarea>
+        </div>
+        <div class="buttons-container">
+            <button class="main-button encrypt-button">Encriptar</button>
+            <button class="main-button decrypt-button">Desencriptar</button>
+        </div>
+        <div class="result-container main-container">
+            <p class="result-area"></p>
+        </div>
+    </main>
+
+    <footer></footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
-    <script src="index.js"></script>
+    <script type="module" src="./assets/js/index.js"></script>
 </body>
 </html>

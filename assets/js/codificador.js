@@ -8,7 +8,7 @@ export function encrypt (text) {
 }
 
 export function decrypt (text) {
-    for (let i = 0; i < encryptationCode.length; i++) {
+    for (let i = encryptationCode.length - 1; i >= 0; i = i - 1) {
         if (text.includes(encryptationCode[i][1])) text = text.replaceAll(encryptationCode[i][1], encryptationCode[i][0]);
     }
     return text;

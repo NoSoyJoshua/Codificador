@@ -13,7 +13,7 @@
 </head>
 <body>
     <nav>
-        <img src="./assets/images/menu.png" alt="logo" class="logo">
+        <!-- <img src="./assets/images/menu.png" alt="logo" class="logo"> -->
         <p class="navbar-name">Joshua Quesada</p>
 
         <label for="checkbox" class="toggler">
@@ -27,14 +27,15 @@
     <main>
         <img src="./assets/images/menu.png" alt="Navegación" class="navbar-mobile-button">
         <div class="text-container main-container">
-            <textarea type="text" class="text-area" placeholder="¡Escribe los que deseas des/encriptar aquí!" value=""></textarea>
+            <textarea type="text" class="text-area" name="mensaje" placeholder="¡Escribe los que deseas des/encriptar aquí!" maxlength="400" value=""></textarea>
         </div>
-        <div class="buttons-container">
+        <div class="buttons-container main-container">
             <button class="main-button encrypt-button">Encriptar</button>
             <button class="main-button decrypt-button">Desencriptar</button>
         </div>
         <div class="result-container main-container">
-            <p class="result-area"></p>
+            <p class="result-area hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet soluta sunt maiores nihil laborum reiciendis placeat odit? Provident, quaerat officia, quia doloribus iusto cum iure sed corrupti quis accusantium eum eveniet mollitia minus perspiciatis saepe ut debitis repudiandae ad reprehenderit? Hic recusandae ullam iusto at aliquam provident inventore, a exercitationem unde dolorum? At dolorem fugiat dolores corporis, tenetur molestias sed, eveniet temporibus quod, vitae numquam optio nobis quasi cum beatae autem totam pariatur vero odit. Repellat tempore illo doloribus facilis ducimus repudiandae adipisci, veritatis in, vitae dolores maiores officia, asperiores corrupti perspiciatis quae quod. Recusandae tempore dignissimos et illum ducimus.</p>
+            <button class="main-button copy-button hidden">Copiar</button>
         </div>
     </main>
 

@@ -161,6 +161,12 @@ main {
     font: "regular";
 }
 
+.main-button:hover {
+    background-color: #FFFFFF;
+    color: black;
+    border: 2px solid #284B63;
+}
+
 .result-container {
     background: url("../images/encrypt.svg") #D9D9D9;
     background-position: center;
@@ -174,8 +180,8 @@ main {
     gap: 1em;
     align-items: center;
     justify-content: center;
-    padding: 1em;
-    /* margin-bottom: 1em; */
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
 }
 
 .result-area {
@@ -189,6 +195,29 @@ main {
 
 .result-container-filled {
     background-image: none;
+}
+
+.copy-button {
+    width: 70%;
+    min-height: 4em;
+}
+
+.warning-container {
+    width: 85%;
+    min-height: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.warning {
+    font-size: .6rem;
 }
 
 .hidden {

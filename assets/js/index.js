@@ -51,13 +51,10 @@ darkmodeButton.click( () => {
     for (let i = 0; i < varModes.length; i++) {
         document.documentElement.style.setProperty(varModes[i], modes[mode][i]);
     }
-
-    logo.classList.toggle("darken-logo");
 })
 
 $(window).on("orientationchange",function(){
     navbar.removeClass("nav-unhide");
     navbarButton.removeClass("navbar-button-unhide");
-    console.log(!(navbarButtonLayout.hasClass("hidden")));
     if (!(navbarButtonLayout.hasClass("hidden"))) navbarButtonLayout.addClass("hidden");
 });

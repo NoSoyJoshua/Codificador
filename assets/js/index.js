@@ -13,8 +13,8 @@ const copyButton = $(".copy-button");
 const darkmodeButton = $('#checkbox');
 
 // Color variables
-const varModes = ["--brightest-color", "--second-brightest-color", "--darkest-color", "--second-darkest-color", "--inbetween-color"]
-const modes = [["#FFFFFF", "#D9D9D9", "#353535", "#284B63", "#3C6E71"], ["#353535", "#284B63", "#3C6E71", "#D9D9D9", "#FFFFFF"]]
+const varModes = ["--brightest-color", "--second-brightest-color", "--darkest-color", "--second-darkest-color", "--inbetween-color", "--bright-letter-color", "--dark-letter-color"]
+const modes = [["#FFFFFF", "#D9D9D9", "#353535", "#284B63", "#3C6E71", "#FFFFFF", "#353535"], ["#353535", "#284B63", "#3C6E71", "#D9D9D9", "#FFFFFF", "#353535", "#FFFFFF"]]
 
 // Other useful variables
 let mode = 0;

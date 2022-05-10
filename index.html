@@ -11,43 +11,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet"> 
     <title>Codificador</title>
 </head>
-<body>
-    <nav>
-        <!-- <img src="./assets/images/menu.png" alt="logo" class="logo"> -->
-        <p class="navbar-name">Joshua Quesada</p>
+    <body>
+        <nav>
+            <i class="fa-solid fa-j logo"></i>
 
-        <label for="checkbox" class="toggler">
-            <input type="checkbox" id="checkbox">
-            <span class="ball"></span>
-            <i class="fa-regular fa-sun sun"></i>
-            <i class="fa-regular fa-moon moon"></i>
-        </label>
-    </nav>
+            <div class="navbar-links-container">
+                <a href="https://github.com/NoSoyJoshua">
+                    <i class="fa-brands fa-github github-logo-navbar footer-logo-navbar"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/joshua-quesada-le%C3%B3n-5a17631bb/">
+                    <i class="fa-brands fa-linkedin linkedin-logo-navbar footer-logo-navbar"></i>
+                </a>
+            </div>
 
-    <main>
-        <img src="./assets/images/menu.png" alt="Navegación" class="navbar-mobile-button">
-        <div class="text-container main-container">
-            <textarea type="text" class="text-area" name="mensaje" placeholder="¡Escribe los que deseas des/encriptar aquí!" maxlength="400" value=""></textarea>
-        </div>
-        <div class="buttons-container main-container">
-            <button class="main-button encrypt-button">Encriptar</button>
-            <button class="main-button decrypt-button">Desencriptar</button>
-        </div>
-        <div class="result-container main-container">
-            <p class="result-area hidden"></p>
-            <button class="main-button copy-button hidden">Copiar</button>
-        </div>
-        <div class="warning-container">
-            <i class="fa-solid fa-circle-exclamation"></i>
-            <p class="warning">Únicamente palabras en minúscula y sin acentos</p>
-        </div>
-    </main>
+            <label for="checkbox" class="toggler">
+                <input type="checkbox" id="checkbox">
+                <span class="ball"></span>
+                <i class="fa-regular fa-sun sun"></i>
+                <i class="fa-regular fa-moon moon"></i>
+            </label>
 
-    <footer></footer>
+            <p class="copyright-navbar"><i class="fa-solid fa-copyright copyright-logo-navbar footer-logo-navbar"></i>Joshua Quesada</p>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
-    <script type="module" src="./assets/js/index.js"></script>
-</body>
+        </nav>
+
+        <main>
+            <img src="./assets/images/menu.png" alt="Navegación" class="navbar-mobile-button">
+            <img src="./assets/images/menu.png" alt="Navegación" class="navbar-mobile-button-layout hidden">
+            <div class="text-buttons-container">
+                <div class="text-container main-container">
+                    <textarea type="text" class="text-area" name="mensaje" placeholder="¡Escribe los que deseas des/encriptar aquí!" maxlength="400" value=""></textarea>
+                </div>
+                <div class="warning-container">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p class="warning">Únicamente palabras en minúscula y sin acentos</p>
+                </div>
+                <div class="buttons-container main-container">
+                    <button class="main-button encrypt-button">Encriptar</button>
+                    <button class="main-button decrypt-button">Desencriptar</button>
+                </div>
+            </div>
+            <div class="result-container main-container">
+                <p class="result-area hidden"></p>
+                <button class="main-button copy-button hidden">Copiar</button>
+            </div>
+        </main>
+
+        <footer>
+            <a href="https://github.com/NoSoyJoshua">
+                <i class="fa-brands fa-github github-logo footer-logo"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/joshua-quesada-le%C3%B3n-5a17631bb/">
+                <i class="fa-brands fa-linkedin linkedin-logo footer-logo"></i>
+            </a>
+            <p class="copyright"><i class="fa-solid fa-copyright copyright-logo footer-logo"></i>Joshua Quesada</p>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+        <script type="module" src="./assets/js/index.js"></script>
+    </body>
 </html>
-
-<!-- Make the navbar button always fixed, so it doesn't disappear when you scroll down and also it stops affecting the layout once you click it' -->

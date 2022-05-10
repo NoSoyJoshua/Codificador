@@ -239,7 +239,7 @@ main {
 
 .main-button:hover {
     background-color: var(--brightest-color);
-    color: black;
+    color: var(--darkest-color);
     border: 2px solid var(--second-darkest-color);
 }
 
@@ -386,7 +386,7 @@ footer > * {
     }
 
     footer {
-        background-color: #353535;
+        background-color: var(--darkest-color);
         align-items: center;
         display: flex;
         flex-direction: row;
